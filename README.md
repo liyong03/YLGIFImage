@@ -10,4 +10,4 @@ It just use very less memory. Following GIF usually will cost almost 1GB memory 
 
 Thanks
 ==========
-Thanks to [OLImageView](https://github.com/ondalabs/OLImageView)! I refered a lot to this project.
+Thanks to [OLImageView](https://github.com/ondalabs/OLImageView)! I referred a lot to this project.
