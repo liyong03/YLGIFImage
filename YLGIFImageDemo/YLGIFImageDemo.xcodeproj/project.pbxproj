@@ -1,0 +1,550 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DFB9040218C347D4008E8DD4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFB9040118C347D4008E8DD4 /* Foundation.framework */; };
+		DFB9040418C347D4008E8DD4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFB9040318C347D4008E8DD4 /* CoreGraphics.framework */; };
+		DFB9040618C347D4008E8DD4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFB9040518C347D4008E8DD4 /* UIKit.framework */; };
+		DFB9040C18C347D4008E8DD4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DFB9040A18C347D4008E8DD4 /* InfoPlist.strings */; };
+		DFB9040E18C347D4008E8DD4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB9040D18C347D4008E8DD4 /* main.m */; };
+		DFB9041218C347D4008E8DD4 /* YLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB9041118C347D4008E8DD4 /* YLAppDelegate.m */; };
+		DFB9041418C347D4008E8DD4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFB9041318C347D4008E8DD4 /* Images.xcassets */; };
+		DFB9041B18C347D4008E8DD4 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFB9041A18C347D4008E8DD4 /* XCTest.framework */; };
+		DFB9041C18C347D4008E8DD4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFB9040118C347D4008E8DD4 /* Foundation.framework */; };
+		DFB9041D18C347D4008E8DD4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFB9040518C347D4008E8DD4 /* UIKit.framework */; };
+		DFB9042518C347D4008E8DD4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DFB9042318C347D4008E8DD4 /* InfoPlist.strings */; };
+		DFB9042718C347D4008E8DD4 /* YLGIFImageDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB9042618C347D4008E8DD4 /* YLGIFImageDemoTests.m */; };
+		DFB9047C18C34C36008E8DD4 /* DemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB9047B18C34C36008E8DD4 /* DemoViewController.m */; };
+		DFB9047D18C34C36008E8DD4 /* DemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB9047B18C34C36008E8DD4 /* DemoViewController.m */; };
+		DFB9048818C34CF1008E8DD4 /* libYLGIFImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DFB9048418C34C48008E8DD4 /* libYLGIFImage.a */; };
+		DFB9048A18C34D1E008E8DD4 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFB9048918C34D1E008E8DD4 /* ImageIO.framework */; };
+		DFB9048E18C35001008E8DD4 /* joy.gif in Resources */ = {isa = PBXBuildFile; fileRef = DFB9048D18C35001008E8DD4 /* joy.gif */; };
+		DFB9048F18C35001008E8DD4 /* joy.gif in Resources */ = {isa = PBXBuildFile; fileRef = DFB9048D18C35001008E8DD4 /* joy.gif */; };
+		DFB9049118C3506F008E8DD4 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFB9049018C3506F008E8DD4 /* MobileCoreServices.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DFB9041E18C347D4008E8DD4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DFB903F618C347D3008E8DD4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DFB903FD18C347D4008E8DD4;
+			remoteInfo = YLGIFImageDemo;
+		};
+		DFB9048318C34C48008E8DD4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DFB9047E18C34C47008E8DD4 /* YLGIFImage.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DFB903C318C3397F008E8DD4;
+			remoteInfo = YLGIFImage;
+		};
+		DFB9048518C34C48008E8DD4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DFB9047E18C34C47008E8DD4 /* YLGIFImage.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DFB903D318C3397F008E8DD4;
+			remoteInfo = YLGIFImageTests;
+		};
+		DFB9048B18C34DBD008E8DD4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DFB9047E18C34C47008E8DD4 /* YLGIFImage.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = DFB903C218C3397F008E8DD4;
+			remoteInfo = YLGIFImage;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DFB903FE18C347D4008E8DD4 /* YLGIFImageDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YLGIFImageDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFB9040118C347D4008E8DD4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DFB9040318C347D4008E8DD4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		DFB9040518C347D4008E8DD4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		DFB9040918C347D4008E8DD4 /* YLGIFImageDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "YLGIFImageDemo-Info.plist"; sourceTree = "<group>"; };
+		DFB9040B18C347D4008E8DD4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DFB9040D18C347D4008E8DD4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DFB9040F18C347D4008E8DD4 /* YLGIFImageDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YLGIFImageDemo-Prefix.pch"; sourceTree = "<group>"; };
+		DFB9041018C347D4008E8DD4 /* YLAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLAppDelegate.h; sourceTree = "<group>"; };
+		DFB9041118C347D4008E8DD4 /* YLAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLAppDelegate.m; sourceTree = "<group>"; };
+		DFB9041318C347D4008E8DD4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		DFB9041918C347D4008E8DD4 /* YLGIFImageDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YLGIFImageDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFB9041A18C347D4008E8DD4 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		DFB9042218C347D4008E8DD4 /* YLGIFImageDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "YLGIFImageDemoTests-Info.plist"; sourceTree = "<group>"; };
+		DFB9042418C347D4008E8DD4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DFB9042618C347D4008E8DD4 /* YLGIFImageDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLGIFImageDemoTests.m; sourceTree = "<group>"; };
+		DFB9047A18C34C36008E8DD4 /* DemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoViewController.h; sourceTree = "<group>"; };
+		DFB9047B18C34C36008E8DD4 /* DemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoViewController.m; sourceTree = "<group>"; };
+		DFB9047E18C34C47008E8DD4 /* YLGIFImage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = YLGIFImage.xcodeproj; path = ../YLGIFImage.xcodeproj; sourceTree = "<group>"; };
+		DFB9048918C34D1E008E8DD4 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		DFB9048D18C35001008E8DD4 /* joy.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = joy.gif; sourceTree = "<group>"; };
+		DFB9049018C3506F008E8DD4 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DFB903FB18C347D4008E8DD4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFB9049118C3506F008E8DD4 /* MobileCoreServices.framework in Frameworks */,
+				DFB9048A18C34D1E008E8DD4 /* ImageIO.framework in Frameworks */,
+				DFB9048818C34CF1008E8DD4 /* libYLGIFImage.a in Frameworks */,
+				DFB9040418C347D4008E8DD4 /* CoreGraphics.framework in Frameworks */,
+				DFB9040618C347D4008E8DD4 /* UIKit.framework in Frameworks */,
+				DFB9040218C347D4008E8DD4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFB9041618C347D4008E8DD4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFB9041B18C347D4008E8DD4 /* XCTest.framework in Frameworks */,
+				DFB9041D18C347D4008E8DD4 /* UIKit.framework in Frameworks */,
+				DFB9041C18C347D4008E8DD4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DFB903F518C347D3008E8DD4 = {
+			isa = PBXGroup;
+			children = (
+				DFB9040718C347D4008E8DD4 /* YLGIFImageDemo */,
+				DFB9042018C347D4008E8DD4 /* YLGIFImageDemoTests */,
+				DFB9040018C347D4008E8DD4 /* Frameworks */,
+				DFB903FF18C347D4008E8DD4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DFB903FF18C347D4008E8DD4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DFB903FE18C347D4008E8DD4 /* YLGIFImageDemo.app */,
+				DFB9041918C347D4008E8DD4 /* YLGIFImageDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DFB9040018C347D4008E8DD4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DFB9049018C3506F008E8DD4 /* MobileCoreServices.framework */,
+				DFB9047E18C34C47008E8DD4 /* YLGIFImage.xcodeproj */,
+				DFB9048918C34D1E008E8DD4 /* ImageIO.framework */,
+				DFB9040118C347D4008E8DD4 /* Foundation.framework */,
+				DFB9040318C347D4008E8DD4 /* CoreGraphics.framework */,
+				DFB9040518C347D4008E8DD4 /* UIKit.framework */,
+				DFB9041A18C347D4008E8DD4 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DFB9040718C347D4008E8DD4 /* YLGIFImageDemo */ = {
+			isa = PBXGroup;
+			children = (
+				DFB9041018C347D4008E8DD4 /* YLAppDelegate.h */,
+				DFB9041118C347D4008E8DD4 /* YLAppDelegate.m */,
+				DFB9047A18C34C36008E8DD4 /* DemoViewController.h */,
+				DFB9047B18C34C36008E8DD4 /* DemoViewController.m */,
+				DFB9048D18C35001008E8DD4 /* joy.gif */,
+				DFB9041318C347D4008E8DD4 /* Images.xcassets */,
+				DFB9040818C347D4008E8DD4 /* Supporting Files */,
+			);
+			path = YLGIFImageDemo;
+			sourceTree = "<group>";
+		};
+		DFB9040818C347D4008E8DD4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DFB9040918C347D4008E8DD4 /* YLGIFImageDemo-Info.plist */,
+				DFB9040A18C347D4008E8DD4 /* InfoPlist.strings */,
+				DFB9040D18C347D4008E8DD4 /* main.m */,
+				DFB9040F18C347D4008E8DD4 /* YLGIFImageDemo-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DFB9042018C347D4008E8DD4 /* YLGIFImageDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				DFB9042618C347D4008E8DD4 /* YLGIFImageDemoTests.m */,
+				DFB9042118C347D4008E8DD4 /* Supporting Files */,
+			);
+			path = YLGIFImageDemoTests;
+			sourceTree = "<group>";
+		};
+		DFB9042118C347D4008E8DD4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DFB9042218C347D4008E8DD4 /* YLGIFImageDemoTests-Info.plist */,
+				DFB9042318C347D4008E8DD4 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DFB9047F18C34C47008E8DD4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DFB9048418C34C48008E8DD4 /* libYLGIFImage.a */,
+				DFB9048618C34C48008E8DD4 /* YLGIFImageTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DFB903FD18C347D4008E8DD4 /* YLGIFImageDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DFB9042A18C347D4008E8DD4 /* Build configuration list for PBXNativeTarget "YLGIFImageDemo" */;
+			buildPhases = (
+				DFB903FA18C347D4008E8DD4 /* Sources */,
+				DFB903FB18C347D4008E8DD4 /* Frameworks */,
+				DFB903FC18C347D4008E8DD4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DFB9048C18C34DBD008E8DD4 /* PBXTargetDependency */,
+			);
+			name = YLGIFImageDemo;
+			productName = YLGIFImageDemo;
+			productReference = DFB903FE18C347D4008E8DD4 /* YLGIFImageDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DFB9041818C347D4008E8DD4 /* YLGIFImageDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DFB9042D18C347D4008E8DD4 /* Build configuration list for PBXNativeTarget "YLGIFImageDemoTests" */;
+			buildPhases = (
+				DFB9041518C347D4008E8DD4 /* Sources */,
+				DFB9041618C347D4008E8DD4 /* Frameworks */,
+				DFB9041718C347D4008E8DD4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DFB9041F18C347D4008E8DD4 /* PBXTargetDependency */,
+			);
+			name = YLGIFImageDemoTests;
+			productName = YLGIFImageDemoTests;
+			productReference = DFB9041918C347D4008E8DD4 /* YLGIFImageDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DFB903F618C347D3008E8DD4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = YL;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Yong Li";
+				TargetAttributes = {
+					DFB9041818C347D4008E8DD4 = {
+						TestTargetID = DFB903FD18C347D4008E8DD4;
+					};
+				};
+			};
+			buildConfigurationList = DFB903F918C347D3008E8DD4 /* Build configuration list for PBXProject "YLGIFImageDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = DFB903F518C347D3008E8DD4;
+			productRefGroup = DFB903FF18C347D4008E8DD4 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = DFB9047F18C34C47008E8DD4 /* Products */;
+					ProjectRef = DFB9047E18C34C47008E8DD4 /* YLGIFImage.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				DFB903FD18C347D4008E8DD4 /* YLGIFImageDemo */,
+				DFB9041818C347D4008E8DD4 /* YLGIFImageDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		DFB9048418C34C48008E8DD4 /* libYLGIFImage.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libYLGIFImage.a;
+			remoteRef = DFB9048318C34C48008E8DD4 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DFB9048618C34C48008E8DD4 /* YLGIFImageTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = YLGIFImageTests.xctest;
+			remoteRef = DFB9048518C34C48008E8DD4 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DFB903FC18C347D4008E8DD4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFB9048E18C35001008E8DD4 /* joy.gif in Resources */,
+				DFB9040C18C347D4008E8DD4 /* InfoPlist.strings in Resources */,
+				DFB9041418C347D4008E8DD4 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFB9041718C347D4008E8DD4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFB9042518C347D4008E8DD4 /* InfoPlist.strings in Resources */,
+				DFB9048F18C35001008E8DD4 /* joy.gif in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DFB903FA18C347D4008E8DD4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFB9047C18C34C36008E8DD4 /* DemoViewController.m in Sources */,
+				DFB9040E18C347D4008E8DD4 /* main.m in Sources */,
+				DFB9041218C347D4008E8DD4 /* YLAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFB9041518C347D4008E8DD4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFB9042718C347D4008E8DD4 /* YLGIFImageDemoTests.m in Sources */,
+				DFB9047D18C34C36008E8DD4 /* DemoViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DFB9041F18C347D4008E8DD4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DFB903FD18C347D4008E8DD4 /* YLGIFImageDemo */;
+			targetProxy = DFB9041E18C347D4008E8DD4 /* PBXContainerItemProxy */;
+		};
+		DFB9048C18C34DBD008E8DD4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = YLGIFImage;
+			targetProxy = DFB9048B18C34DBD008E8DD4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DFB9040A18C347D4008E8DD4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DFB9040B18C347D4008E8DD4 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		DFB9042318C347D4008E8DD4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DFB9042418C347D4008E8DD4 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DFB9042818C347D4008E8DD4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DFB9042918C347D4008E8DD4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DFB9042B18C347D4008E8DD4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "YLGIFImageDemo/YLGIFImageDemo-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Applications/Xcode51-Beta5.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include",
+					../YLGIFImage,
+				);
+				INFOPLIST_FILE = "YLGIFImageDemo/YLGIFImageDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		DFB9042C18C347D4008E8DD4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "YLGIFImageDemo/YLGIFImageDemo-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Applications/Xcode51-Beta5.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include",
+					../YLGIFImage,
+				);
+				INFOPLIST_FILE = "YLGIFImageDemo/YLGIFImageDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		DFB9042E18C347D4008E8DD4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/YLGIFImageDemo.app/YLGIFImageDemo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "YLGIFImageDemo/YLGIFImageDemo-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "YLGIFImageDemoTests/YLGIFImageDemoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		DFB9042F18C347D4008E8DD4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/YLGIFImageDemo.app/YLGIFImageDemo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "YLGIFImageDemo/YLGIFImageDemo-Prefix.pch";
+				INFOPLIST_FILE = "YLGIFImageDemoTests/YLGIFImageDemoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DFB903F918C347D3008E8DD4 /* Build configuration list for PBXProject "YLGIFImageDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DFB9042818C347D4008E8DD4 /* Debug */,
+				DFB9042918C347D4008E8DD4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DFB9042A18C347D4008E8DD4 /* Build configuration list for PBXNativeTarget "YLGIFImageDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DFB9042B18C347D4008E8DD4 /* Debug */,
+				DFB9042C18C347D4008E8DD4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DFB9042D18C347D4008E8DD4 /* Build configuration list for PBXNativeTarget "YLGIFImageDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DFB9042E18C347D4008E8DD4 /* Debug */,
+				DFB9042F18C347D4008E8DD4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DFB903F618C347D3008E8DD4 /* Project object */;
+}
