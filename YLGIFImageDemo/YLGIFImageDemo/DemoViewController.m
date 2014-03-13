@@ -30,7 +30,9 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    YLImageView* imageView = [[YLImageView alloc] initWithFrame:CGRectMake(0, 50, 320, 240)];
+    self.title = @"YLGIFImageDemo";
+    
+    YLImageView* imageView = [[YLImageView alloc] initWithFrame:CGRectMake(0, 160, 320, 240)];
     [self.view addSubview:imageView];
     imageView.image = [YLGIFImage imageNamed:@"joy.gif"];
 }
