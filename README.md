@@ -5,7 +5,7 @@ Asynchronized GIF image class and Image viewer supporting play/stop GIF images.
 
 It just use very less memory. Following GIF usually will cost almost 600MB memory if it is fully decoded (800x600x389x4 Bytes), but using YLGIFImage, it just use about 30MB memory.
 
-->![Joy](./YLGIFImageDemo/YLGIFImageDemo/joy.gif =320x240)<-
+<img src="./YLGIFImageDemo/YLGIFImageDemo/joy.gif" align="middle" width="320" />
 
 For this gif file, iOS Pinterest also will crash, but using YLGIFImage, it won't!
 
@@ -18,7 +18,8 @@ For using YLGIFImage, it's very simple:
 
 Here is the demo looks like:
 
-->![Screenshot](./screenshot.png =320x568)<-
+
+<img align="middle" src="./screenshot.png" width="320" />
 
 Thanks
 ==========
