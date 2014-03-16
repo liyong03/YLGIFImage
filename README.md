@@ -23,4 +23,4 @@ Here is the demo looks like:
 
 Thanks
 ==========
-Thanks to [OLImageView](https://github.com/ondalabs/OLImageView)! I referred a lot to this project, especially using NSDisplay.
+Thanks to [OLImageView](https://github.com/ondalabs/OLImageView)! I referred a lot to this project, especially using CADisplayLink to play the animation.
