@@ -48,7 +48,6 @@
 /* Begin PBXFileReference section */
 		DFB903C318C3397F008E8DD4 /* libYLGIFImage.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libYLGIFImage.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFB903C618C3397F008E8DD4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		DFB903CA18C3397F008E8DD4 /* YLGIFImage-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YLGIFImage-Prefix.pch"; sourceTree = "<group>"; };
 		DFB903CB18C3397F008E8DD4 /* YLGIFImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLGIFImage.h; sourceTree = "<group>"; };
 		DFB903CD18C3397F008E8DD4 /* YLGIFImage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLGIFImage.m; sourceTree = "<group>"; };
 		DFB903D318C3397F008E8DD4 /* YLGIFImageTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YLGIFImageTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -126,17 +125,8 @@
 				DFB903CD18C3397F008E8DD4 /* YLGIFImage.m */,
 				DFB903F018C34158008E8DD4 /* YLImageView.h */,
 				DFB903F118C34158008E8DD4 /* YLImageView.m */,
-				DFB903C918C3397F008E8DD4 /* Supporting Files */,
 			);
 			path = YLGIFImage;
-			sourceTree = "<group>";
-		};
-		DFB903C918C3397F008E8DD4 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				DFB903CA18C3397F008E8DD4 /* YLGIFImage-Prefix.pch */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		DFB903DC18C3397F008E8DD4 /* YLGIFImageTests */ = {
@@ -347,7 +337,7 @@
 			buildSettings = {
 				DSTROOT = /tmp/YLGIFImage.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "YLGIFImage/YLGIFImage-Prefix.pch";
+				GCC_PREFIX_HEADER = "";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -359,7 +349,7 @@
 			buildSettings = {
 				DSTROOT = /tmp/YLGIFImage.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "YLGIFImage/YLGIFImage-Prefix.pch";
+				GCC_PREFIX_HEADER = "";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -421,6 +411,7 @@
 				DFB903E818C33980008E8DD4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DFB903E918C33980008E8DD4 /* Build configuration list for PBXNativeTarget "YLGIFImageTests" */ = {
 			isa = XCConfigurationList;
@@ -429,6 +420,7 @@
 				DFB903EB18C33980008E8DD4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
