@@ -84,7 +84,7 @@ const NSTimeInterval kMaxTimeStep = 1; // note: To avoid spiral-o-death
     self.accumulator = 0;
     
     if ([image isKindOfClass:[YLGIFImage class]] && image.images) {
-        if(image.images[0])
+        if([image.images[0] isKindOfClass:UIImage.class])
             [super setImage:image.images[0]];
         else
             [super setImage:nil];
