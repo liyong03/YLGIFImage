@@ -70,7 +70,7 @@ inline static BOOL isRetinaFilePath(NSString *path)
 
 @end
 
-static int _prefetchedNum = 10;
+static NSUInteger _prefetchedNum = 10;
 
 @implementation YLGIFImage
 {
@@ -189,7 +189,7 @@ static int _prefetchedNum = 10;
     //CFTimeInterval start = CFAbsoluteTimeGetCurrent();
     // Load first frame
     NSUInteger num = MIN(_prefetchedNum, numberOfFrames);
-    for (int i=0; i<num; i++) {
+    for (NSUInteger i=0; i<num; i++) {
         CGImageRef image = CGImageSourceCreateImageAtIndex(imageSource, i, NULL);
         [self.images replaceObjectAtIndex:i withObject:[UIImage imageWithCGImage:image scale:scale orientation:UIImageOrientationUp]];
         CFRelease(image);
