@@ -9,6 +9,9 @@ It just use very less memory. Following GIF usually will cost almost 600MB memor
 
 For this gif file, iOS Pinterest also will crash, but using YLGIFImage, it won't!
 
+####Swift support
+I created another project to implement YLGIFImage using swift, it's called [YLGIFImage-Swift](https://github.com/liyong03/YLGIFImage-Swift).
+
 ####Get Start
 Using [CocoaPods](http://cocoapods.org/) to get start, you can add following line to your Podfile:
     
