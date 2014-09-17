@@ -32,7 +32,7 @@
     
     self.title = @"YLGIFImageDemo";
     
-    YLImageView* imageView = [[YLImageView alloc] initWithFrame:CGRectMake(0, 160, 320, 240)];
+    YLImageView* imageView = [[YLImageView alloc] initWithFrame:CGRectMake(0, 160, self.view.frame.size.width, 0.75*self.view.frame.size.width)];
     [self.view addSubview:imageView];
     imageView.image = [YLGIFImage imageNamed:@"joy.gif"];
 }

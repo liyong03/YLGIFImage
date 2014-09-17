@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DF257E3A19C9D5C300628192 /* Launch Screen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF257E3919C9D5C300628192 /* Launch Screen.xib */; };
 		DFB9040218C347D4008E8DD4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFB9040118C347D4008E8DD4 /* Foundation.framework */; };
 		DFB9040418C347D4008E8DD4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFB9040318C347D4008E8DD4 /* CoreGraphics.framework */; };
 		DFB9040618C347D4008E8DD4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFB9040518C347D4008E8DD4 /* UIKit.framework */; };
@@ -60,6 +61,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DF257E3919C9D5C300628192 /* Launch Screen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "Launch Screen.xib"; sourceTree = "<group>"; };
 		DFB903FE18C347D4008E8DD4 /* YLGIFImageDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YLGIFImageDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFB9040118C347D4008E8DD4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DFB9040318C347D4008E8DD4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -154,6 +156,7 @@
 				DFB9048D18C35001008E8DD4 /* joy.gif */,
 				DFB9041318C347D4008E8DD4 /* Images.xcassets */,
 				DFB9040818C347D4008E8DD4 /* Supporting Files */,
+				DF257E3919C9D5C300628192 /* Launch Screen.xib */,
 			);
 			path = YLGIFImageDemo;
 			sourceTree = "<group>";
@@ -297,6 +300,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DFB9048E18C35001008E8DD4 /* joy.gif in Resources */,
+				DF257E3A19C9D5C300628192 /* Launch Screen.xib in Resources */,
 				DFB9040C18C347D4008E8DD4 /* InfoPlist.strings in Resources */,
 				DFB9041418C347D4008E8DD4 /* Images.xcassets in Resources */,
 			);
