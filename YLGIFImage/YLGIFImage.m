@@ -191,8 +191,12 @@ static NSUInteger _prefetchedNum = 10;
     NSUInteger num = MIN(_prefetchedNum, numberOfFrames);
     for (NSUInteger i=0; i<num; i++) {
         CGImageRef image = CGImageSourceCreateImageAtIndex(imageSource, i, NULL);
-        [self.images replaceObjectAtIndex:i withObject:[UIImage imageWithCGImage:image scale:scale orientation:UIImageOrientationUp]];
-        CFRelease(image);
+        if (image != NULL) {
+            [self.images replaceObjectAtIndex:i withObject:[UIImage imageWithCGImage:image scale:_scale orientation:UIImageOrientationUp]];
+            CFRelease(image);
+        } else {
+            [self.images replaceObjectAtIndex:i withObject:[NSNull null]];
+        }
     }
     _imageSourceRef = imageSource;
     CFRetain(_imageSourceRef);
@@ -215,8 +219,10 @@ static NSUInteger _prefetchedNum = 10;
     }
     if(!frame) {
         CGImageRef image = CGImageSourceCreateImageAtIndex(_imageSourceRef, idx, NULL);
-        frame = [UIImage imageWithCGImage:image scale:_scale orientation:UIImageOrientationUp];
-        CFRelease(image);
+        if (image != NULL) {
+            frame = [UIImage imageWithCGImage:image scale:_scale orientation:UIImageOrientationUp];
+            CFRelease(image);
+        }
     }
     if(self.images.count > _prefetchedNum) {
         if(idx != 0) {
@@ -229,9 +235,13 @@ static NSUInteger _prefetchedNum = 10;
                 dispatch_async(readFrameQueue, ^{
                     CGImageRef image = CGImageSourceCreateImageAtIndex(_imageSourceRef, _idx, NULL);
                     @synchronized(self.images) {
-                        [self.images replaceObjectAtIndex:_idx withObject:[UIImage imageWithCGImage:image scale:_scale orientation:UIImageOrientationUp]];
+                        if (image != NULL) {
+                            [self.images replaceObjectAtIndex:_idx withObject:[UIImage imageWithCGImage:image scale:_scale orientation:UIImageOrientationUp]];
+                            CFRelease(image);
+                        } else {
+                            [self.images replaceObjectAtIndex:_idx withObject:[NSNull null]];
+                        }
                     }
-                    CFRelease(image);
                 });
             }
         }
