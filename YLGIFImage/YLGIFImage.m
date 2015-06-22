@@ -7,6 +7,7 @@
 //
 
 #import "YLGIFImage.h"
+#import "YLImageView.h"
 #import <MobileCoreServices/MobileCoreServices.h>
 #import <ImageIO/ImageIO.h>
 
@@ -80,6 +81,7 @@ static NSUInteger _prefetchedNum = 10;
 }
 
 @synthesize images;
+@synthesize views = _views;
 
 #pragma mark - Class Methods
 
@@ -288,6 +290,44 @@ static NSUInteger _prefetchedNum = 10;
     free(_frameDurations);
     if (_incrementalSource) {
         CFRelease(_incrementalSource);
+    }
+}
+
+#pragma mark - Rendering support
+
+- (NSHashTable *)views
+{
+    @synchronized(self) {
+        if (_views == nil) {
+            _views = [NSHashTable weakObjectsHashTable];
+        }
+        return _views;
+    }
+}
+
+- (void)addView:(YLImageView *)view
+{
+    @synchronized(self) {
+        [self.views addObject:view];
+    }
+}
+
+- (void)removeView:(YLImageView *)view
+{
+    @synchronized(self) {
+        [self.views removeObject:view];
+    }
+}
+
+- (YLImageView *)firstAnimatingView
+{
+    @synchronized(self) {
+        for (YLImageView *view in self.views) {
+            if (view.isAnimating) {
+                return view;
+            }
+        }
+        return nil;
     }
 }
 

@@ -18,7 +18,6 @@
 @property (nonatomic) NSUInteger currentFrameIndex;
 @property (nonatomic, strong) UIImage* currentFrame;
 @property (nonatomic) NSUInteger loopCountdown;
-
 @end
 
 @implementation YLImageView
@@ -35,6 +34,11 @@ const NSTimeInterval kMaxTimeStep = 1; // note: To avoid spiral-o-death
         self.currentFrameIndex = 0;
     }
     return self;
+}
+
+- (void)dealloc
+{
+    [self.animatedImage removeView:self];
 }
 
 - (CADisplayLink *)displayLink
@@ -101,7 +105,11 @@ const NSTimeInterval kMaxTimeStep = 1; // note: To avoid spiral-o-death
 
 - (void)setAnimatedImage:(YLGIFImage *)animatedImage
 {
+    [_animatedImage removeView:self];
+
     _animatedImage = animatedImage;
+    [animatedImage addView:self];
+
     if (animatedImage == nil) {
         self.layer.contents = nil;
     }
@@ -142,6 +150,11 @@ const NSTimeInterval kMaxTimeStep = 1; // note: To avoid spiral-o-death
 
 - (void)changeKeyframe:(CADisplayLink *)displayLink
 {
+    if (!self.isLeader) {
+        [self.layer setNeedsDisplay];
+        return;
+    }
+        
     if (self.currentFrameIndex >= [self.animatedImage.images count]) {
         return;
     }
@@ -215,6 +228,56 @@ const NSTimeInterval kMaxTimeStep = 1; // note: To avoid spiral-o-death
 - (CGSize)sizeThatFits:(CGSize)size
 {
     return self.image.size;
+}
+
+- (void)setCurrentFrame:(UIImage *)currentFrame
+{
+    if (self.animatedImage) {
+        self.animatedImage.currentFrame = currentFrame;
+    }
+}
+
+- (UIImage *)currentFrame
+{
+    if (self.animatedImage) {
+        return self.animatedImage.currentFrame;
+    }
+    return nil;
+}
+
+- (NSTimeInterval)accumulator
+{
+    if (self.animatedImage) {
+        return self.animatedImage.accumulator;
+    }
+    return 0;
+}
+
+- (void)setAccumulator:(NSTimeInterval)accumulator
+{
+    if (self.animatedImage) {
+        self.animatedImage.accumulator = accumulator;
+    }
+}
+
+- (NSUInteger)currentFrameIndex
+{
+    if (self.animatedImage) {
+        return self.animatedImage.currentFrameIndex;
+    }
+    return 0;
+}
+
+- (void)setCurrentFrameIndex:(NSUInteger)currentFrameIndex
+{
+    if (self.animatedImage) {
+        self.animatedImage.currentFrameIndex = currentFrameIndex;
+    }
+}
+
+- (BOOL)isLeader
+{
+    return self.animatedImage.firstAnimatingView == self;
 }
 
 @end

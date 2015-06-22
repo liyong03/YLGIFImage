@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+@class YLImageView;
+
 @interface YLGIFImage : UIImage
 
 ///-----------------------
@@ -32,5 +34,23 @@
 @property (nonatomic, readonly) NSUInteger loopCount;
 
 - (UIImage*)getFrameWithIndex:(NSUInteger)idx;
+
+///------------------------
+/// @name Rendering support
+///------------------------
+
+@property (nonatomic) NSTimeInterval accumulator;
+
+@property (nonatomic) NSUInteger currentFrameIndex;
+
+@property (nonatomic, strong) UIImage* currentFrame;
+
+- (void)addView:(YLImageView *)view;
+
+- (void)removeView:(YLImageView *)view;
+
+- (YLImageView *)firstAnimatingView;
+
+@property (nonatomic, strong, readonly) NSHashTable *views;
 
 @end
