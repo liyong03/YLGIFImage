@@ -85,7 +85,7 @@ static NSUInteger _prefetchedNum = 10;
 
 + (id)imageNamed:(NSString *)name
 {
-    NSString *path = [[[NSBundle mainBundle] bundlePath] stringByAppendingPathComponent:name];
+    NSString *path = [[NSBundle mainBundle] pathForResource:name ofType:nil];
     
     return ([[NSFileManager defaultManager] fileExistsAtPath:path]) ? [self imageWithContentsOfFile:path] : nil;
 }
