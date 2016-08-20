@@ -11,5 +11,6 @@
 @interface YLImageView : UIImageView
 
 @property (nonatomic, copy) NSString *runLoopMode;
+@property (nonatomic, assign) NSInteger repeatCount;
 
 @end

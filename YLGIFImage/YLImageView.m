@@ -150,9 +150,18 @@ const NSTimeInterval kMaxTimeStep = 1; // note: To avoid spiral-o-death
     while (self.accumulator >= self.animatedImage.frameDurations[self.currentFrameIndex]) {
         self.accumulator -= self.animatedImage.frameDurations[self.currentFrameIndex];
         if (++self.currentFrameIndex >= [self.animatedImage.images count]) {
-            if (--self.loopCountdown == 0) {
-                [self stopAnimating];
-                return;
+            self.loopCountdown--;
+            if (self.repeatCount > 0) {
+                if (self.repeatCount < (-self.loopCountdown)) {
+                    [self stopAnimating];
+                    return;
+                }
+            }
+            if (self.repeatCount <= 0) {
+                if (self.loopCountdown == 0) {
+                    [self stopAnimating];
+                    return;
+                }
             }
             self.currentFrameIndex = 0;
         }
