@@ -165,6 +165,9 @@ const NSTimeInterval kMaxTimeStep = 1; // note: To avoid spiral-o-death
 - (void)displayLayer:(CALayer *)layer
 {
     if (!self.animatedImage || [self.animatedImage.images count] == 0) {
+        if (@available(iOS 14.0, *)) {
+            [super displayLayer:layer];
+        }
         return;
     }
     //NSLog(@"display index: %luu", (unsigned long)self.currentFrameIndex);
