@@ -168,8 +168,13 @@ const NSTimeInterval kMaxTimeStep = 1; // note: To avoid spiral-o-death
         return;
     }
     //NSLog(@"display index: %luu", (unsigned long)self.currentFrameIndex);
-    if(self.currentFrame && ![self.currentFrame isKindOfClass:[NSNull class]])
+    if(self.currentFrame && ![self.currentFrame isKindOfClass:[NSNull class]]){
         layer.contents = (__bridge id)([self.currentFrame CGImage]);
+    }else{
+        if (@available(iOS 14.0, *)) {
+            [super displayLayer:layer];
+        }
+    }
 }
 
 - (void)didMoveToWindow
